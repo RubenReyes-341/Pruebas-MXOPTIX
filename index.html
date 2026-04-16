@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Información del sitio -->
+  <meta name="description" content="Sistema gestor de expedientes para franquicias MX OPTIX">
+  <meta name="author" content="MX OPTIX">
+
+  <title>MX OPTIX | Plantilla</title>
+
+  <!-- Icono -->
+  <link rel="icon" href="assets/Logo.jpeg">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER / NAVBAR
+       Contiene logo, menú y logout
+  ========================= -->
+  <header class="navbar">
+
+    <!-- Barra superior: logo + botón + hamburguesa -->
+    <div class="container navbar-top">
+
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <img src="assets/Logo.jpeg" alt="MX OPTIX">
+      </div>
+
+      <!-- Botón cerrar sesión (visible en desktop) -->
+      <button class="btn logout-desktop">
+        Cerrar sesión
+      </button>
+
+      <!-- Botón menú hamburguesa (solo móvil) -->
+      <div class="menu-toggle">
+        ☰
+      </div>
+
+    </div>
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+         Cambia entre móvil (columna)
+         y desktop (fila)
+    ========================= -->
+    <nav class="container navbar-menu">
+
+      <!-- Cada link representa una vista del sistema -->
+      <a href="registro.php">Registrar Expediente</a>
+      <a href="buscar.php">Buscar Expedientes</a>
+      <a href="pedidos.php">Seguimiento de Pedidos</a>
+      <a href="administrativo.php">Panel Administrativo</a>
+
+    </nav>
+
+  </header>
+
+  <!-- =========================
+       CONTENIDO PRINCIPAL
+       Aquí cambia el contenido
+       de cada página del sistema
+  ========================= -->
+  <main class="main">
+
+    <div class="container">
+
+      <!-- Ejemplo de estructura base -->
+      <section class="section">
+
+        <h1 class="title">
+          Bienvenido al sistema
+        </h1>
+
+        <p class="text-center">
+          Aquí irá el contenido dinámico de cada módulo.
+        </p>
+
+      </section>
+
+      <!-- Botón cerrar sesión (solo móvil) -->
+      <button class="btn logout-mobile">
+        Cerrar sesión
+      </button>
+
+    </div>
+
+  </main>
+
+  <!-- =========================
+       SCRIPT PRINCIPAL
+       Controla interacción del menú
+  ========================= -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* =========================
+   RESET GLOBAL
+   Elimina estilos por defecto
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES (Design System)
+   Colores y medidas reutilizables
+========================= */
+:root {
+  --color-negro: #1A1A1A;
+  --color-blanco: #FFFFFF;
+  --color-amarillo: #FFC107;
+  --color-fondo: #F5F5F5;
+
+  --color-texto: #333333;
+  --color-texto-secundario: #9E9E9E;
+
+  --max-width: 1200px;
+}
+
+/* =========================
+   BASE
+   Estilos generales del sitio
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+/* =========================
+   SECCIÓN CENTRADA
+========================= */
+.section {
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* Título */
+.title {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CONTENEDOR
+   Centra el contenido y limita ancho
+========================= */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* =========================
+   NAVBAR (estructura general)
+========================= */
+.navbar {
+  background: var(--color-blanco);
+  border-bottom: 1px solid #ddd;
+}
+
+/* Barra superior: logo + acciones */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* =========================
+   BOTÓN HAMBURGUESA (móvil)
+========================= */
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* =========================
+   MENÚ DE NAVEGACIÓN
+========================= */
+.navbar-menu {
+  display: none; /* oculto en móvil */
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Estado activo (cuando se abre en móvil) */
+.navbar-menu.active {
+  display: flex;
+}
+
+/* Links del menú */
+.navbar-menu a {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-texto-secundario);
+
+  /* transición suave */
+  transition: all 0.2s ease;
+}
+
+/* Hover (móvil) */
+.navbar-menu a:hover {
+  background: #eee;
+}
+
+/* =========================
+   ITEM ACTIVO (línea amarilla)
+   Preparado para futuro uso
+========================= */
+.navbar-menu a.active {
+  color: var(--color-negro);
+  border-bottom: 2px solid var(--color-amarillo);
+}
+
+/* =========================
+   BOTONES
+========================= */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Logout (móvil) */
+.logout-mobile {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Logout (desktop oculto por defecto) */
+.logout-desktop {
+  display: none;
+}
+
+/* =========================
+   MAIN (contenido)
+========================= */
+.main {
+  padding: 20px 0;
+}
+
+/* =========================
+   DESKTOP (≥768px)
+========================= */
+@media (min-width: 768px) {
+
+  /* Ocultar hamburguesa */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Menú visible siempre */
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    border: none;
+    padding: 10px 0;
+  }
+
+  /* Links en desktop */
+  .navbar-menu a {
+    width: auto;
+    padding: 10px 0;
+    background: none;
+  }
+
+  /* Hover más limpio en desktop */
+  .navbar-menu a:hover {
+    background: none;
+    color: var(--color-negro);
+  }
+
+  /* Logout desktop visible */
+  .logout-desktop {
+    display: block;
+  }
+
+  /* Logout móvil oculto */
+  .logout-mobile {
+    display: none;
+  }
+}
