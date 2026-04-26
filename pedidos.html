@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Información del sitio -->
+  <meta name="description" content="Sistema gestor de expedientes para franquicias MX OPTIX">
+  <meta name="author" content="MX OPTIX">
+
+  <title>MX OPTIX | Pedidos</title>
+
+  <link rel="icon" href="assets/Logo.jpeg">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER / BARRA DE NAVEGACION
+       Contiene logo, menú y logout
+  ========================= -->
+  <header class="navbar">
+
+    <!-- Barra superior: logo + botón + hamburguesa -->
+    <div class="container navbar-top">
+
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <a href="menu_principal.html"><img src="assets/logo transparente bueno.png" alt="MX OPTIX"></a>
+      </div>
+
+      <!-- Botón cerrar sesión (visible en desktop) -->
+      <button class="btn logout-desktop">
+        Cerrar sesión
+      </button>
+
+      <!-- Botón menú hamburguesa (solo móvil) -->
+      <div class="menu-toggle">
+        ☰
+      </div>
+
+    </div>
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+         Cambia entre móvil (columna)
+         y pc (fila)
+    ========================= -->
+    <nav class="container navbar-menu">
+      <a href="registro.html">Registrar Expediente</a>
+      <a href="buscar.html">Buscar Expedientes</a>
+      <a href="pedidos.html">Seguimiento de Pedidos</a>
+      <a href="administrativo pruebas.html">Panel Administrativo</a>
+
+    </nav>
+
+  </header>
+
+  <!-- =========================
+       CONTENIDO 
+       Aquí se pone la info jiji
+  ========================= -->
+  <main class="main">
+
+    <div class="container">
+
+      <section class="section">
+
+        <h1 class="title">Seguimiento de Pedidos</h1>
+
+<div class="divform">
+  <input type="text" placeholder="Buscar por nombre o número de pedido...">
+  <button class="btn">Buscar</button>
+</div>
+<div class="card">
+<div class="tabla-contenedor">
+  <table>
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Paciente</th>
+        <th>Fecha del Pedido</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1001</td>
+        <td>Ana López</td>
+        <td>10/04/2024</td>
+        <td><span class="estado proceso">En Proceso</span></td>
+        <td><button class="btn">Ver Detalles</button></td>
+      </tr>
+
+      <tr>
+        <td>1000</td>
+        <td>Carlos Martínez</td>
+        <td>05/04/2024</td>
+        <td><span class="estado completado">Completado</span></td>
+        <td><button class="btn">Ver Detalles</button></td>
+      </tr>
+
+      <tr>
+        <td>998</td>
+        <td>Laura Gómez</td>
+        <td>02/04/2024</td>
+        <td><span class="estado pendiente">Pendiente</span></td>
+        <td><button class="btn">Ver Detalles</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+      </section>
+
+      <!-- Botón cerrar sesión (solo móvil) -->
+      <button class="btn logout-mobile">Cerrar sesión</button>
+
+    </div>
+
+  </main>
+
+  <!-- =========================
+       SCRIPT
+  ========================= -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
+
+<!-- =========================
+     INSTRUCCIONES EXTRA
+========================= -->
+
+<!--
+ESTRUCTURA GENERAL
+
+- Todo el contenido debe ir dentro de:
+  <section class="section">
+
+- Siempre usar:
+  <div class="container">
+  para centrar contenido
+
+
+COMPONENTES BÁSICOS
+
+Botones:
+- Usar siempre:
+  class="btn"
+- Ejemplo:
+  <button class="btn">Guardar</button>
+
+Títulos:
+- Usar:
+  class="title"
+- Ejemplo:
+  <h1 class="title">Registrar expediente</h1>
+
+Secciones:
+- Usar:
+  class="section"
+- Ejemplo:
+  <section class="section">...</section>
+
+
+PRIMERO PARA TELEFONO
+
+1. Primero hacer diseño para celular
+2. Luego adaptar a PC con @media en CSS
+
+Ejemplo CSS:
+
+.elemento {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .elemento {
+    width: 50%;
+  }
+}

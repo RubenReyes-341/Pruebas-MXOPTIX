@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Sistema gestor de expedientes para franquicias MX OPTIX">
+  <meta name="author" content="MX OPTIX">
+
+  <title>MX OPTIX | Registro de clientes</title>
+
+  <link rel="icon" href="assets/Logo.jpeg">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container navbar-top">
+
+    <div class="logo">
+      <a href="menu_principal.html"><img src="assets/logo transparente bueno.png" alt="MX OPTIX"></a>
+    </div>
+
+    <button class="btn logout-desktop">
+      Cerrar sesión
+    </button>
+
+    <div class="menu-toggle">☰</div>
+
+  </div>
+
+  <nav class="container navbar-menu">
+    <a href="registro.html">Registrar Expediente</a>
+    <a href="buscar.html">Buscar Expedientes</a>
+    <a href="pedidos.html">Seguimiento de Pedidos</a>
+    <a href="administrativo pruebas.html">Panel Administrativo</a>
+  </nav>
+</header>
+
+<main class="main">
+  <div class="container">
+
+    <section class="section">
+
+      <h1 class="title">ANAMNESIS</h1>
+
+      <!-- CARD PRINCIPAL -->
+      <div class="card">
+
+        <form>
+
+          <!-- DATOS GENERALES -->
+           <h3 class="subsection-title">Datos generales</h3>
+
+          <div class="divform">
+            <label>Nombre</label>
+            <input class="input" type="text">
+          </div>
+
+          <div class="divform">
+            <label>Dirección</label>
+            <input class="input" type="text">
+          </div>
+
+          <div class="divform">
+            <label>Tel. Móvil</label>
+            <input class="input" type="text">
+          </div>
+
+          <div class="divform">
+            <label>Correo</label>
+            <input class="input" type="email">
+          </div>
+
+          <div class="divform">
+            <label>Ocupación</label>
+            <input class="input" type="text">
+          </div>
+
+          <div class="divform">
+            <label>Edad</label>
+            <input class="input" type="number">
+          </div>
+
+          <div class="divform">
+            <label>Fecha</label>
+            <input class="input" type="date">
+          </div>
+
+          <hr>
+
+          <!-- PRINCIPAL MOLESTIA -->
+          <h3 class="subsection-title">Principal molestia</h3>
+
+          <div class="checkbox-group">
+            <label><input type="checkbox"> Irritación</label>
+            <label><input type="checkbox"> Prurito</label>
+            <label><input type="checkbox"> Ardor</label>
+            <label><input type="checkbox"> Lagrimeo</label>
+            <label><input type="checkbox"> Cefalea</label>
+            <label><input type="checkbox"> Dolor</label>
+            <label><input type="checkbox"> Fotofobia</label>
+          </div>
+
+          <hr>
+
+          <!-- VISIÓN -->
+          <div class="divform">
+            <label>Visión borrosa lejana</label>
+            <select class="input">
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+          <div class="divform">
+            <label>Visión borrosa cercana</label>
+            <select class="input">
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+          <div class="divform">
+            <label>Visión doble</label>
+            <select class="input">
+              <option>SI</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+          <hr>
+
+          <!-- ANTECEDENTES -->
+          <h3 class="subsection-title">Antecedentes</h3>
+
+          <div class="checkbox-group">
+            <label><input type="checkbox"> Trauma ocular</label>
+            <label><input type="checkbox"> Estrabismo</label>
+            <label><input type="checkbox"> Glaucoma</label>
+            <label><input type="checkbox"> Uveítis</label>
+            <label><input type="checkbox"> Queratocono</label>
+            <label><input type="checkbox"> Conjuntivitis</label>
+            <label><input type="checkbox"> Diabetes</label>
+            <label><input type="checkbox"> Hipertensión</label>
+            <label><input type="checkbox"> Cardiopatías</label>
+          </div>
+
+          <hr>
+
+          <!-- LENSOMETRÍA -->
+          <div class="divform">
+            <label>Lensometría O.D</label>
+            <input class="input" type="text">
+          </div>
+
+          <div class="divform">
+            <label>Lensometría O.I</label>
+            <input class="input" type="text">
+          </div>
+
+          <hr>
+
+          <!-- TABLA AGUDEZA VISUAL -->
+          <h3>Agudeza Visual</h3>
+
+          <div class="tabla-contenedor">
+            <table>
+              <thead>
+                <tr>
+                  <th>AV</th>
+                  <th>CON LENTES</th>
+                  <th>SIN LENTES</th>
+                  <th>ESTENOPEICO</th>
+                  <th>CON RX</th>
+                  <th>LECTURA</th>
+                  <th>NOTAS</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>O.D.</td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td rowspan="3"><textarea class="input"></textarea></td>
+                </tr>
+
+                <tr>
+                  <td>O.I.</td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                </tr>
+
+                <tr>
+                  <td>A/O</td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <hr>
+
+          <!-- TABLA RX -->
+          <h3>RX Final</h3>
+
+          <div class="tabla-contenedor">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Esfera</th>
+                  <th>Cilindro</th>
+                  <th>Eje</th>
+                  <th>Add</th>
+                  <th>Altura</th>
+                  <th>DNP</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>OD</td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                </tr>
+
+                <tr>
+                  <td>OI</td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                  <td><input class="input"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <hr>
+
+          <!-- LEYENDA -->
+          <p class="leyenda">
+Certifico que me han informado mi agudeza visual así como las ametropias que se deberán atender. 
+De la misma manera me encuentro satisfecho(a) con las lentes y pruebas que se me han configurado 
+y otorgo mi consentimiento para que partiendo de esta evaluación se me configuren las lentes que necesito.
+</p>
+
+          <!-- DIAGNÓSTICO -->
+          <div class="divform">
+            <label>Diagnóstico</label>
+            <textarea class="input"></textarea>
+          </div>
+
+          <div class="divform">
+            <label>Nombre</label>
+            <input class="input" type="text">
+          </div>
+
+          <!-- BOTONES -->
+          <div class="divform">
+            <button class="btn btn-primary">Guardar</button>
+            <button class="btn">Cancelar</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <button class="btn logout-mobile">Cerrar sesión</button>
+
+  </div>
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

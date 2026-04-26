@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Información del sitio -->
+  <meta name="description" content="Sistema gestor de expedientes para franquicias MX OPTIX">
+  <meta name="author" content="MX OPTIX">
+
+  <title>MX OPTIX | Buscar Expedientes</title>
+
+  <link rel="icon" href="assets/Logo.jpeg">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER / BARRA DE NAVEGACION
+       Contiene logo, menú y logout
+  ========================= -->
+  <header class="navbar">
+
+    <!-- Barra superior: logo + botón + hamburguesa -->
+    <div class="container navbar-top">
+
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <a href="menu_principal.html"><img src="assets/logo transparente bueno.png" alt="MX OPTIX"></a>
+      </div>
+
+      <!-- Botón cerrar sesión (visible en desktop) -->
+      <button class="btn logout-desktop">
+        Cerrar sesión
+      </button>
+
+      <!-- Botón menú hamburguesa (solo móvil) -->
+      <div class="menu-toggle">
+        ☰
+      </div>
+
+    </div>
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+         Cambia entre móvil (columna)
+         y pc (fila)
+    ========================= -->
+    <nav class="container navbar-menu">
+      <a href="registro.html">Registrar Expediente</a>
+      <a href="buscar.html">Buscar Expedientes</a>
+      <a href="pedidos.html">Seguimiento de Pedidos</a>
+      <a href="administrativo pruebas.html">Panel Administrativo</a>
+
+    </nav>
+
+  </header>
+
+  <!-- =========================
+       CONTENIDO 
+       Aquí se pone la info jiji
+  ========================= -->
+  <main class="main">
+
+    <div class="container">
+
+      <section class="section">
+          <!-- =========================
+          LO IDEAL SERIA QUE A PARTIR DE AQUI AÑADIERAN
+          ========================= -->
+        <h1 class="title">
+          Buscar Expedientes
+        </h1>
+       <br>
+       <br>
+
+<!--Formulario Buscar Expendientes-->
+<div class="card">
+<form class="formbuscar"> 
+  
+  <div class="divform">
+    <label for="nombre">Nombre o Apellido:</label>
+    <input type="text" id="nombre" name="nombre">
+</div>
+
+  <div class="divform">
+  <label for="fecha">Fecha de Nacimiento:</label>
+  <input type="date" id="fecha" name="fecha"> 
+  <button type="submit" class="btn">Buscar</button>
+</div>
+
+</form>
+</div>
+      </section>
+
+      <!-- Botón cerrar sesión (solo móvil) -->
+      <button class="btn logout-mobile">Cerrar sesión</button>
+
+    </div>
+
+  </main>
+
+  <!-- =========================
+       SCRIPT
+  ========================= -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
+
+<!-- =========================
+     INSTRUCCIONES EXTRA
+========================= -->
+
+<!--
+ESTRUCTURA GENERAL
+
+- Todo el contenido debe ir dentro de:
+  <section class="section">
+
+- Siempre usar:
+  <div class="container">
+  para centrar contenido
+
+
+COMPONENTES BÁSICOS
+
+Botones:
+- Usar siempre:
+  class="btn"
+- Ejemplo:
+  <button class="btn">Guardar</button>
+
+Títulos:
+- Usar:
+  class="title"
+- Ejemplo:
+  <h1 class="title">Registrar expediente</h1>
+
+Secciones:
+- Usar:
+  class="section"
+- Ejemplo:
+  <section class="section">...</section>
+
+
+PRIMERO PARA TELEFONO
+
+1. Primero hacer diseño para celular
+2. Luego adaptar a PC con @media en CSS
+
+Ejemplo CSS:
+
+.elemento {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .elemento {
+    width: 50%;
+  }
+}

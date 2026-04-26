@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Información del sitio -->
+  <meta name="description" content="Sistema gestor de expedientes para franquicias MX OPTIX">
+  <meta name="author" content="MX OPTIX">
+
+  <title>MX OPTIX | Visualización de expediente</title>
+
+  <link rel="icon" href="assets/Logo.jpeg">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER / BARRA DE NAVEGACION
+       Contiene logo, menú y logout
+  ========================= -->
+  <header class="navbar">
+
+    <!-- Barra superior: logo + botón + hamburguesa -->
+    <div class="container navbar-top">
+
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <a href="menu_principal.html"><img src="assets/logo transparente bueno.png" alt="MX OPTIX"></a>
+      </div>
+
+      <!-- Botón cerrar sesión (visible en desktop) -->
+      <button class="btn logout-desktop">
+        Cerrar sesión
+      </button>
+
+      <!-- Botón menú hamburguesa (solo móvil) -->
+      <div class="menu-toggle">
+        ☰
+      </div>
+
+    </div>
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+         Cambia entre móvil (columna)
+         y pc (fila)
+    ========================= -->
+    <nav class="container navbar-menu">
+      <a href="registro.php">Registrar Expediente</a>
+      <a href="buscar.php" class="active">Buscar Expedientes</a>
+      <a href="pedidos.php">Seguimiento de Pedidos</a>
+      <a href="administrativo.php">Panel Administrativo</a>
+    </nav>
+
+  </header>
+
+  <!-- =========================
+       CONTENIDO 
+       Aquí se pone la info jiji
+  ========================= -->
+  <main class="main">
+
+    <div class="container">
+
+      <section class="section">
+
+  <h1 class="title">Ver Expediente</h1>
+
+  <div class="card">
+
+    <!-- DATOS -->
+    <div class="divform">
+      <label>Número de expediente</label>
+      <input class="input" type="text" value="012345" readonly>
+    </div>
+
+    <div class="divform">
+      <label>Nombre completo</label>
+      <input class="input" type="text" value="Ana López" readonly>
+    </div>
+
+    <div class="divform">
+      <label>Fecha de nacimiento</label>
+      <input class="input" type="text" value="15/04/1985" readonly>
+    </div>
+
+    <div class="divform">
+      <label>Teléfono</label>
+      <input class="input" type="text" value="5544332211" readonly>
+    </div>
+
+    <div class="divform">
+      <label>Dirección</label>
+      <input class="input" type="text" value="Calle Ficticia 123, Ciudad, Estado" readonly>
+    </div>
+
+    <!-- DIAGNÓSTICO -->
+    <div class="divform">
+      <label>Diagnóstico</label>
+      <textarea class="input" readonly>
+Miopía moderada. Se recomienda uso de lentes correctivos.
+      </textarea>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="divform">
+      <button class="btn btn-primary" id="btnEditar">Editar</button>
+      <button class="btn" id="btnVolver">Volver</button>
+      <button class="btn" id="btnPDF">Descargar PDF</button>
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- Botón cerrar sesión (solo móvil) -->
+      <button class="btn logout-mobile">Cerrar sesión</button>
+
+    </div>
+
+  </main>
+
+  <!-- =========================
+       SCRIPT
+  ========================= -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
